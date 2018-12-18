@@ -1,0 +1,39 @@
+Game name: Whack-a-mole
+Programmer: Changyao Li
+Advisor: Karim Naqvi, Trevor Douglas, Dave Duguid
+-------------------------------------------------------------------------------------------
+How to play: 
+1. Load file from computer.
+
+2. Press reset button (black pushbutton on the cortex-m3 board) to start the program.
+
+3. Press any pushbutton (red, black, blue, green) to start the game.
+
+4. You will have around 3 secons (by defult, change difficulty by change ReactTime) to press pushbutton.
+
+5. Press the right pushbutton to go to next level, pressed wrong one or ran out of time will fail the game.
+
+6. After pressed right pushbutton 15 times (by defult, based on NumCycles) you will win the game.
+
+7. If you win, a different LED pattern will shown. Press any pushbotton or wait for 1 minutes to restart the game.
+
+8. If you fail, the LED will show what level you are (lost in the first cycle will show level 1). Press any pushbotton or wait for 10 second to restart the game.
+
+9. Repeat from step 3 to 8.
+-------------------------------------------------------------------------------------------
+How to adjust the game parameters:
+(a) PrelimWait: The time wait for lighting a LED before every cycle, about half second (it is better not to change).
+
+(b) LevelUp: The time reduce the ReactTime after every cycle (The larger the number, the harder the game).
+
+(c) ReactTime: The time allowed for the user to press the correct button to avoid terminating the game (at least 20 times of LevelUp. The larger the number, the easier the game). 
+
+(d) NumCycles: The number of cycles in a game (from 1 to 15).
+
+(e) WinningSignalTime: The time for controling frequency of the LEDs during winning signal is on.
+
+(f) LosingSignalTime: The time for controling frequency of the LEDs during losing signal is on.
+
+(g) DT_1_MIN: The time wait for restart during winning signal is on.
+
+(h) DT_10_SEC: The time wait for restart during losing signal is on.
