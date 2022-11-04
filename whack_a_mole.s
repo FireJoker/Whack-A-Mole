@@ -87,7 +87,7 @@ __Vectors	DCD		INITIAL_MSP	; stack pointer value when stack is empty
 ;;; File: whack_a_mole.s
 ;;; Class: ENSE352
 ;;; Date: December, 6th, 2018
-;;; Programmer: Changyao Li
+;;; Programmer: Cary Li
 ;;; Description:
 ;;;		Write a Whack-a-mole game in assembly language.
 ;;;
